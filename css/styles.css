@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Oxygen|Lato');
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+
+strong {
+	font-weight: 800;
+	color: lightblue;
+	text-decoration: underline;
+}
+
+#menu li {
+	font-family: 'oxygen', sans-serif;
+	display:inline-block;
+	margin: 1vmin;
+	color: #000;
+	background: #fff;
+	background: rgba(255,255,255, 0.2);
+	-webkit-border-radius: 5px;
+            border-radius: 5px;
+}
+#menu li.active{
+	background: #666;
+	background: rgba(0,0,0, 0.5);
+	color: #e0e0e0;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.5);
+}
+#menu li a,
+#menu li.active a{
+	padding: 8px 12px;
+	display:block;
+}
+#menu li.active a{
+	color: #e0e0e0;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#section0 h1 {
+	text-align: left;
+	font-family: 'Nunito', sans-serif;
+	font-size:7vmax;
+	color: white;
+	padding-top: 25%;
+	/*	padding-left: 10%;*/
+	padding-left: 5%;
+	padding-right: 5%;
+	font-weight: 600;
+}
+
+.headerz {
+	text-align: left;
+	font-family: 'Nunito', sans-serif;
+	font-size:5vmax;
+	color: white;
+	font-weight: 600;
+}
+
+h2 {
+	text-align: left;
+	font-family: 'Nunito', sans-serif;
+	font-size:3.2vmax;
+	color: white;
+	font-weight: 400;
+}
+
+.normal-text-quiz {
+	font-size: 1.2em;
+	color: white;
+	text-align: left;
+	font-family: 'Oxygen';
+	font-weight: 50;
+}
+
+
+#section0 p {
+	font-size: 2.4vmax;
+	text-align: left;
+	font-family: 'Oxygen', sans-serif;
+	color: #D61E70;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-weight: 200;
+}
+
+
+.lotus, .lotus-image {
+	margin: auto;
+	background: cover;
+	bottom: 0;
+}
+
+.pull-bottom{
+	margin-bottom: 0;
+}
+
+/*#section0 {
+	overflow:hidden;
+}*/
+
+#section0 {
+	overflow: hidden;
+}
+
+#section1 {
+	overflow: scroll;
+}
+
+
+@media only screen  and (min-width: 1000px) {
+  	#section0 img{
+  		margin-top: 30%;
+  	}
+}
+
+
+.section {
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+	color:white;
+	font-size: 1.2em;
+	
+}
+
+#section1 {
+	overflow: scroll;
+}
+
+#section1 .fp-scroller{
+    overflow: hidden;
+}
+
+.padding-sections {
+	padding-top: 7%;
+	padding-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+/*
+.nano { background: #bba; width: 500px; height: 500px; }
+.nano .nano-content { padding: 10px; }
+.nano .nano-pane   { background: #888; }
+.nano .nano-slider { background: #111; }*/
+
+.quiz {
+	font-family: 'oxygen';
+	color: white;
+	font-size: 1.2em;
+	text-align: left;
+}
+
+
+
+.possible_answer {
+	color: white;
+    padding: .75em;
+    background-color: #c29cd8;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    text-align: left;
+}
+
+.possible_answer:hover {
+	background: #a794b2;
+	cursor: pointer;
+    font-weight: bold;
+     text-align: left;
+}
+
+.correct-answer, .wrong-answer {
+	opacity: .75;
+	cursor: pointer;
+	 text-align: left;
+}
+
+
+.wrong-answer {
+	background: #FF8362;	
+}
+
+.correct-answer {
+    background: #62DA97;
+}
+
+.selected {
+    opacity: 1;
+}
+
+.selected:hover, .correct-answer:hover, .wrong-answer:hover {
+	opacity: 1;
+}
+
+.how_you_did {
+	text-align: left;
+	margin-top: 1em;
+	padding: 1em;
+	background-color:  #c29cd8;
+	font-weight: bold;
+	font-size: 1.5em;
+	-webkit-box-shadow: 0px 7px 5px rgba(50, 50, 50, 0.65);
+	-moz-box-shadow:    0px 7px 5px rgba(50, 50, 50, 0.65);
+	box-shadow:         0px 7px 5px rgba(50, 50, 50, 0.65);
+}
+
+/*multimedia styling*/
+
+#section1 img, .youtube {
+	margin-bottom: 1em;
+	min-height: 200px;
+	max-height: 200px;
+}
+
+.possible_answer img {
+	max-height: 24em;
+}
+
+.question img, .revealed_answer img, .selected img, .correct-answer img, .wrong-answer img {
+    max-height: 24em;
+    display: block;
+}
+
+.videoembed {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.videoembed iframe, .videoembed object, .videoembed embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.tooltiptext{
+    display: none;
+}
+
+
+
+#a_qtip{
+     display:inline;
+  }
