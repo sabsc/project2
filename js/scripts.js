@@ -24,7 +24,7 @@ $(document).ready(function() {
         // scrollOverflow: scrolloverflowed,
         anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4','anchor5','anchor6', 'anchor7', 'anchor8'],
         menu: '#menu',
-        sectionsColor: ['#432c51', '#8F569C', '#D61E70', '#FA5B75', '#f27100', '#FFD464', '#FFFB85', "#ffffff"]
+        sectionsColor: ['#432c51', '#8F569C', '#D61E70', '#FA5B75', '#f27100', '#FFD464', '#FFFB85', "#dbed78"]
       
      
 

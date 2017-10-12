@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Oxygen|Lato');
 
-body,div,dl,dt,dd,ul,ol,li,h1,pre,
+body,div,dl,dt,dd,ol,li,h1,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
     margin: 0;
@@ -10,6 +10,14 @@ strong {
 	font-weight: 800;
 	border-bottom: 3px solid yellow;
 	text-decoration: none;
+}
+
+strong:hover {
+	opacity: .8;
+}
+
+img:hover {
+	opacity: .8;
 }
 
 #section6 strong {
@@ -128,7 +136,7 @@ h2 {
 }
 
 
-#section0, #section1, #section2 {
+#section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7 {
 	overflow: scroll;
 }
 
@@ -147,9 +155,6 @@ h2 {
 	
 }
 
-#section1, #section2, #section3, #section4 {
-	overflow: scroll;
-}
 
 #section5, #section6, #section7{
 	color: black;
@@ -160,6 +165,11 @@ h2 {
 
 #section2 {
 	color: #f7f2f6;
+}
+
+#section2 h1 {
+	display: inline-block;
+
 }
 
 h2 {
@@ -183,6 +193,10 @@ h2 {
 	color: #0c02d6;
 }
 
+#section4 ul {
+	padding: 0;
+}
+
 #section5 h1{
 	color: black;
 }
@@ -191,12 +205,19 @@ h2 {
 	font-size: 1.2em;
 }
 
-#section6 h1, h2, #section6 p {
+.tw {
+	padding-left: 20px;
+	display:inline-block;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+#section6 h1, h2, #section6 p, #section7 h1, h2, #section7 p{
 	color: #444444;
 }
 
-#section5, #section6 {
-	overflow: scroll;
+#section7 h2 {
+	color: #ed0e6e;
 }
 
 .pink {
