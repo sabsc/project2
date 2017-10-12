@@ -1,32 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Oxygen|Lato');
 
+/* Entire html doc styles */
 body,div,dl,dt,dd,ol,li,h1,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
     margin: 0;
 }
 
-strong {
-	font-weight: 800;
-	border-bottom: 3px solid yellow;
-	text-decoration: none;
-}
-
-strong:hover {
-	opacity: .8;
-}
-
 img:hover {
 	opacity: .8;
-}
-
-#section6 strong {
-	border-bottom: 3px solid #f213d3;
 }
 
 .figure-caption {
 	font-size: .9em;
 }
+
+/* Top Nav Styling */
 
 #menu li {
 	font-family: 'oxygen', sans-serif;
@@ -59,13 +48,15 @@ img:hover {
 }
 
 #menu li a,
-#menu li.active a{
+#menu li.active a {
 	padding: 8px 12px;
 	display:block;
 }
-#menu li.active a{
+
+#menu li.active a {
 	color: #e0e0e0;
 }
+
 #menu{
 	position:fixed;
 	top:0;
@@ -76,6 +67,9 @@ img:hover {
 	padding: 0;
 	margin: 0;
 }
+
+
+/*Styling for section colors*/
 
 #section0 h1 {
 	text-align: left;
@@ -89,7 +83,7 @@ img:hover {
 	font-weight: 600;
 }
 
-.headerz {
+.headerz { /* Used for all headers with slight variations between sections */
 	text-align: left;
 	font-family: 'Nunito', sans-serif;
 	font-size:5vmax;
@@ -215,9 +209,10 @@ h2 {
 	color: #762bd1;
 }
 
-#section7 a {
-	color: #0d58ad;
+#section6 b {
+	font-size: 1.4em;
 }
+
 
 .tw {
 	padding-left: 20px;
@@ -232,6 +227,11 @@ h2 {
 
 #section7 h2 {
 	color: #ed0e6e;
+}
+
+
+#section7 a {
+	color: #0d58ad;
 }
 
 .pink {
@@ -274,16 +274,15 @@ h4 {
 	font-size: .9em;
 }
 
+
 .padding-sections {
 	padding-top: 7%;
 	padding-left: 5%;
 	padding-right: 5%;
 }
-/*
-.nano { background: #bba; width: 500px; height: 500px; }
-.nano .nano-content { padding: 10px; }
-.nano .nano-pane   { background: #888; }
-.nano .nano-slider { background: #111; }*/
+
+
+/* MotherJones Quiz Styling */
 
 .quiz {
 	font-family: 'oxygen';
@@ -383,6 +382,17 @@ h4 {
 }
 
 
+/* For qTip2 */
+
+strong {
+	font-weight: 800;
+	border-bottom: 3px solid yellow;
+	text-decoration: none;
+}
+
+strong:hover {
+	opacity: .8;
+}
 
 #a_qtip, #chrys_qtip, #long_qtip, #puccini, #aapi, #report{
      display:inline;
@@ -392,12 +402,8 @@ h4 {
 	color: white;
 }
 
-#section6 b {
-	font-size: 1.4em;
-}
-
-area {
-	border-radius: 2px;
+#section6 strong {
+	border-bottom: 3px solid #f213d3;
 }
 
 ul {

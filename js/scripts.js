@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-	// var scrolloverflowed;
-	// if ($('#fullpage').width() < 1024) { // check the width (window.width() or other method)
-	// 	scrolloverflowed = false;
-	// } else {
-	// 	scrolloverflowed = true;
-	// }
 
     $('#fullpage').fullpage({
         verticalCentered: true,
@@ -154,12 +148,6 @@ $(document).ready(function() {
      });
  });
 
- //your published spreadsheet key or URL goes here
-
-// $('#fullpage').fullpage({
-//     scrollOverflow: true
-// });
-
 
 
     setInterval(function(){
@@ -229,44 +217,6 @@ $(document).ready(function() {
     }
 
 
- //    var ctx2 = document.getElementById("breakdown-by-race").getContext('2d');
- //    var breakdown-by-race = new Chart(ctx2, {
-	// 	type:"bar",
-	// 	data: {
-	// 		labels: ["Whites","African Americans","Hispanics","Mixed folks","Native Americans","Asian Americans and Pacific Islanders"],
-	// 		datasets: [{
-	// 			label: '% of group reporting sexual violence',
-	// 			data: [21.3, 26.3, 21.2, 27, 30.7, 51],
-	// 			backgroundColor:[
-	// 				'rgba(255, 99, 132, 0.2)',
-	//                 'rgba(54, 162, 235, 0.2)',
-	//                 'rgba(255, 206, 86, 0.2)',
-	//                 'rgba(75, 192, 192, 0.2)',
-	//                 'rgba(153, 102, 255, 0.2)',
-	//                 '#F4A7BC',
-	//             ],
-	// 			borderColor:[
-	//                 'rgba(255,99,132,1)',
-	//                 'rgba(54, 162, 235, 1)',
-	//                 'rgba(255, 206, 86, 1)',
-	//                 'rgba(75, 192, 192, 1)',
-	//                 'rgba(153, 102, 255, 1)',
-	//                 '#AD0B64'
-	// 			],
-	// 			borderWidth:1
-	// 		}]
-	// 	},
-
-	// 	options:{
-	// 		scales:{
-	// 			yAxes:[{
-	// 				ticks:{
-	// 					beginAtZero:true
-	// 				}
-	// 			}]
-	// 		}
-	// 	}
-	// });
 
 
 });
@@ -274,14 +224,3 @@ $(document).ready(function() {
 
 
 
-
-
-// $(".nano").nanoScroller();
-
-// $('.timeline').timelify({
-// 			animLeft: "fadeInLeft",
-// 		animCenter: "fadeInUp",
-// 		animRight: "fadeInRight",
-// 		animSpeed: 600,
-// 		offset: 150
-// 	});
