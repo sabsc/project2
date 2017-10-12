@@ -8,8 +8,12 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 
 strong {
 	font-weight: 800;
-	color: lightblue;
-	text-decoration: underline;
+	border-bottom: 3px solid yellow;
+	text-decoration: none;
+}
+
+#section6 strong {
+	border-bottom: 3px solid #f213d3;
 }
 
 .figure-caption {
@@ -26,21 +30,26 @@ strong {
 	-webkit-border-radius: 5px;
             border-radius: 5px;
 }
+
 #menu li.active{
 	background: #666;
 	background: rgba(0,0,0, 0.5);
 	color: #e0e0e0;
 }
+
 #menu li a{
 	text-decoration:none;
 	color: #000;
 }
+
 #menu li.active a:hover{
 	color: #000;
 }
+
 #menu li:hover{
 	background: rgba(255,255,255, 0.5);
 }
+
 #menu li a,
 #menu li.active a{
 	padding: 8px 12px;
@@ -118,15 +127,8 @@ h2 {
 	margin-bottom: 0;
 }
 
-/*#section0 {
-	overflow:hidden;
-}*/
 
-#section0 {
-	overflow: hidden;
-}
-
-#section1, #section2 {
+#section0, #section1, #section2 {
 	overflow: scroll;
 }
 
@@ -145,10 +147,13 @@ h2 {
 	
 }
 
-#section1, #section2, #section3 {
+#section1, #section2, #section3, #section4 {
 	overflow: scroll;
 }
 
+#section5, #section6, #section7{
+	color: black;
+}
 #section1 .fp-scroller{
     overflow: hidden;
 }
@@ -166,7 +171,7 @@ h2 {
 }
 
 #section2 p{
-	font-size: 2.5vmin;
+	font-size: 1.2em;
 	font-weight: 100;
 }
 
@@ -175,7 +180,63 @@ h2 {
 }
 
 #section4 h2{
-	color: #bc0ba5;
+	color: #0c02d6;
+}
+
+#section5 h1{
+	color: black;
+}
+
+#section5 p, #section6 p{
+	font-size: 1.2em;
+}
+
+#section6 h1, h2, #section6 p {
+	color: #444444;
+}
+
+#section5, #section6 {
+	overflow: scroll;
+}
+
+.pink {
+	color: #f213d3;
+	font-size: 3em;
+	font-weight: 600;
+	line-height: .8em;
+}
+
+.novel {
+	font-size: 1em;
+}
+
+.section3-padding {
+	padding-top: 7%;
+	padding-left: 12%;
+	padding-right: 12%;
+}
+
+.padding-section-small {
+	padding-top: 10%;
+	padding-left: 12%;
+	padding-right: 12%;
+}
+
+#section4 h3, #section6 h3{
+	font-size: 1.2em;
+}
+
+h4 {
+	font-family: 'Nunito';
+	font-size: 1.4em;
+}
+
+#section4 p {
+	font-size: 1em;
+}
+
+#section4 li {
+	font-size: .9em;
 }
 
 .padding-sections {
@@ -211,13 +272,13 @@ h2 {
 	background: #a794b2;
 	cursor: pointer;
     font-weight: bold;
-     text-align: left;
+    text-align: left;
 }
 
 .correct-answer, .wrong-answer {
 	opacity: .75;
 	cursor: pointer;
-	 text-align: left;
+	text-align: left;
 }
 
 
@@ -288,18 +349,26 @@ h2 {
 
 
 
-#a_qtip, #chrys_qtip, #long_qtip, #puccini{
+#a_qtip, #chrys_qtip, #long_qtip, #puccini, #aapi, #report{
      display:inline;
 }
 
 #section3 strong {
 	color: white;
-	font-weight: 800;
-	border-bottom: 3px solid yellow;
-	text-decoration: none;
 }
 
+#section6 b {
+	font-size: 1.4em;
+}
 
 area {
 	border-radius: 2px;
+}
+
+ul {
+	margin-left: 1em;
+}
+
+.chart-desc {
+	font-size: .9em;
 }

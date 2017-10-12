@@ -9,17 +9,27 @@ $(document).ready(function() {
 
     $('#fullpage').fullpage({
         verticalCentered: true,
+
+		navigation: false,
+		navigationPosition: 'right',
+		navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide','fourthSlide','fifthSlide','sixthSlide','seventhSlide','eighthSlide'],
+        
+		showActiveTooltip: true,
+		touchSensitivity: 80,
+
         // scrollingSpeed: 500;
         scrollOverflow: true,
         slidesNavigation: true,
+        slidesNavPosition: 'bottom',
         // scrollOverflow: scrolloverflowed,
-        anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4','anchor5','anchor6', 'anchor7'],
+        anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4','anchor5','anchor6', 'anchor7', 'anchor8'],
         menu: '#menu',
-        sectionsColor: ['#432c51', '#8F569C', '#D61E70', '#FA5B75', '#FA8A5D', '#FFD464', '#FFFB85']
+        sectionsColor: ['#432c51', '#8F569C', '#D61E70', '#FA5B75', '#f27100', '#FFD464', '#FFFB85', "#ffffff"]
       
      
 
     });
+    $.fn.fullpage.setScrollingSpeed(900);
 
     var quiz = jQuery('#quiz').quiz('19Wd8VmWC_X0VUCDm1cz6A-iyExG8L-t7iE7cxVlXDr8');
 
@@ -109,6 +119,39 @@ $(document).ready(function() {
        		classes: 'qtip-bootstrap'
     	}
      });
+
+	$('#aapi').qtip({
+        content: 'Asian American and Pacific Islander',
+ 		show: {
+            effect: function() {
+                $(this).fadeTo(500, 1);
+            }
+        },
+        hide: {
+            effect: function() {
+                $(this).slideUp();
+            }
+        },
+        style: {
+       		classes: 'qtip-bootstrap'
+    	}
+     });
+	$('#report').qtip({
+        content: 'Many cases go unreported due to cultural and social factors, such as fear of shame upon a family',
+ 		show: {
+            effect: function() {
+                $(this).fadeTo(500, 1);
+            }
+        },
+        hide: {
+            effect: function() {
+                $(this).slideUp();
+            }
+        },
+        style: {
+       		classes: 'qtip-bootstrap'
+    	}
+     });
  });
 
  //your published spreadsheet key or URL goes here
@@ -119,14 +162,119 @@ $(document).ready(function() {
 
 
 
-    // setInterval(function(){
-    //     $(".lotus").fadeOut(function() {
-    //         $(this).attr("src","./images/flame.png").fadeIn().delay(1000).fadeOut(function(){
-    //             $(this).attr('src', './images/lotus.png').fadeIn().delay(1000);
-    //         });
-    //      }
-    //     );
-    // }, 4000);        
+    setInterval(function(){
+        $(".lotus-2").fadeOut(function() {
+            $(this).attr("src","./images/flame.png").fadeIn().delay(1000).fadeOut(function(){
+                $(this).attr('src', './images/lotus.png').fadeIn().delay(1000);
+            });
+         }
+        );
+    }, 4000);        
+
+
+    var ctx = document.getElementById("myChart").getContext('2d');
+	var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Whites", "African Americans", "Hispanics", "Mixed Race", "American Indians and Alaskan Natives", "Asian Americans and Pacific Islanders"],
+        datasets: [{
+            label: '% of group reporting sexual violence',
+            data: [21.3, 26.3, 21.2, 27, 30.7, 51],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                '#F4A7BC'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                '#AD0B64'
+            ],
+            borderWidth: .7
+        }]
+    },
+    options: {
+        scales: {
+            
+            xAxes: [{
+	            gridLines: {
+	                offsetGridLines: true
+	            },
+	            ticks: {
+                    beginAtZero:true,
+                    autoSkip: false,
+                    maxRotation: 20
+                }
+			}],
+			yAxes: [{
+                ticks: {
+                    beginAtZero:true,
+                    autoSkip: false
+                }
+            }]
+        },
+
+        layout: {
+        	padding: {
+        		bottom: 15
+        	}
+        }
+        
+    }
+
+
+ //    var ctx2 = document.getElementById("breakdown-by-race").getContext('2d');
+ //    var breakdown-by-race = new Chart(ctx2, {
+	// 	type:"bar",
+	// 	data: {
+	// 		labels: ["Whites","African Americans","Hispanics","Mixed folks","Native Americans","Asian Americans and Pacific Islanders"],
+	// 		datasets: [{
+	// 			label: '% of group reporting sexual violence',
+	// 			data: [21.3, 26.3, 21.2, 27, 30.7, 51],
+	// 			backgroundColor:[
+	// 				'rgba(255, 99, 132, 0.2)',
+	//                 'rgba(54, 162, 235, 0.2)',
+	//                 'rgba(255, 206, 86, 0.2)',
+	//                 'rgba(75, 192, 192, 0.2)',
+	//                 'rgba(153, 102, 255, 0.2)',
+	//                 '#F4A7BC',
+	//             ],
+	// 			borderColor:[
+	//                 'rgba(255,99,132,1)',
+	//                 'rgba(54, 162, 235, 1)',
+	//                 'rgba(255, 206, 86, 1)',
+	//                 'rgba(75, 192, 192, 1)',
+	//                 'rgba(153, 102, 255, 1)',
+	//                 '#AD0B64'
+	// 			],
+	// 			borderWidth:1
+	// 		}]
+	// 	},
+
+	// 	options:{
+	// 		scales:{
+	// 			yAxes:[{
+	// 				ticks:{
+	// 					beginAtZero:true
+	// 				}
+	// 			}]
+	// 		}
+	// 	}
+	// });
+
+
+});
+
+
+
+
+
 
 // $(".nano").nanoScroller();
 
