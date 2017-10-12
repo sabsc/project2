@@ -193,6 +193,12 @@ h2 {
 	color: #0c02d6;
 }
 
+#section4 figcaption a {
+	color: #6031a0;
+	font-size: .9em;
+	float: right;
+}
+
 #section4 ul {
 	padding: 0;
 }
@@ -203,6 +209,14 @@ h2 {
 
 #section5 p, #section6 p{
 	font-size: 1.2em;
+}
+
+#section5 a {
+	color: #762bd1;
+}
+
+#section7 a {
+	color: #0d58ad;
 }
 
 .tw {
